@@ -283,7 +283,6 @@ class deployWebhook {
                 var yo = new Date(data.createdAt);
                 var created = yo.toLocaleString();
                 var current_state = data.state;
-                console.log(data.state)
                 if (data.state === 'READY') {
                     $( "#wp-admin-bar-vercel-deploy-button" ).css('opacity', '1');
                     $( "#wp-admin-bar-vercel-deploy-button .ab-empty-item" ).removeClass('running').css('opacity', '1');
