@@ -14,11 +14,6 @@
     "support": {
         "issues": "https://github.com/doreybenjamin/wp-webhook-vercel-deploy/issues"
     },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
-    },
     "require": {
         "php": "^8.0"
     },
