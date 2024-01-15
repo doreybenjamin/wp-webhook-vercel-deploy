@@ -16,9 +16,9 @@ Status Check the status of your latest build to see if it was successful without
 
 ## Installation
 
-You can install WP Vercel Deploy Hooks manually
+You can install WP Vercel Deploy Hooks manually 
 
--    Download the plugin as a .zip file from the repository
+-    Download the plugin as a .zip file from the [repository](https://github.com/doreybenjamin/wp-webhook-vercel-deploy/releases)
 -    Login to your WordPress site and go to Plugins -> Add new -> Upload plugin
 -    Locate the .zip file on your machine, upload and activate
 
