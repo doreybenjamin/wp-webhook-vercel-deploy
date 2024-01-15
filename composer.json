@@ -3,7 +3,7 @@
     "description": "WP Plugin that adds functionality to easily send Vercel Webhook requests",
     "homepage": "https://github.com/doreybenjamin/wp-webhook-vercel-deploy",
     "type": "wordpress-plugin",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Dorey Benjamin",
