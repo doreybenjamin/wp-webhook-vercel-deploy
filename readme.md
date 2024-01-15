@@ -1,6 +1,7 @@
 ## WP Webhook Vercel Deploy
 
 Based on the WordPress Plugin [WP Netlify Webhook Deploy](https://github.com/lukethacoder/wp-webhook-netlify-deploy).
+
 ## Description
 
 Easily deploy static sites using Wordpress and Netlify
@@ -16,11 +17,17 @@ Status Check the status of your latest build to see if it was successful without
 
 ## Installation
 
-You can install WP Vercel Deploy Hooks manually 
+You can install WP Vercel Deploy Hooks manually or through Composer
 
+Manually
 -    Download the plugin as a .zip file from the [repository](https://github.com/doreybenjamin/wp-webhook-vercel-deploy/releases)
 -    Login to your WordPress site and go to Plugins -> Add new -> Upload plugin
 -    Locate the .zip file on your machine, upload and activate
+
+Composer
+```bash
+composer require doreybenjamin/wp-webhook-vercel-deploy
+```
 
 
     
