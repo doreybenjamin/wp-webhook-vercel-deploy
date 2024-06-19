@@ -34,8 +34,9 @@ composer require doreybenjamin/wp-webhook-vercel-deploy
 ## Configuration
 
 - Vercel Deploy Hook: [How to create deploy Hook on Vercel](https://vercel.com/docs/deployments/deploy-hooks)
-- Vercel Site ID: You can find the org and project IDs in the project.json file in the .vercel folder of your local project.
+- Vercel Project ID
 - Vercel API Key: [How to create an Access Token on Vercel](https://vercel.com/docs/rest-api#authentication)
+- If the project is in Team make Default Team your team group in Account Settings
 
 
 ## Informations

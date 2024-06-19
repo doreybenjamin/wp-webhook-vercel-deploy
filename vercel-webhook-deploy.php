@@ -167,9 +167,8 @@ class deployWebhook {
             <footer>
                 <h3><?php _e('Extra Info', 'webhook-vercel-deploy');?></h3>
                 <p><a href="https://vercel.com/docs/deployments/deploy-hooks"><?php _e('Creating a Deploy Hook', 'webhook-vercel-deploy');?></a></p>
-                <p><b>Where to find Vercel Site ID</b></p>
-                <p>You can find the org and project IDs in the project.json file in the .vercel folder of your local project.</p>
                 <p><a href="https://vercel.com/docs/rest-api#authentication" target="_blank"><?php _e('Vercel API Key', 'webhook-vercel-deploy');?></a></p>
+                <p>If the project is in Team make Default Team your team group in Account Settings</p>
             </footer>
 
     	</div> <?php
@@ -315,11 +314,11 @@ class deployWebhook {
                     }
                     if (data.state === 'INITIALIZING') {
                     $( "#build_img" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-pending.svg"; ?>');
-                    $( "#admin-bar-vercel-deploy-status-badge" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-failed.svg"; ?>');
+                    $( "#admin-bar-vercel-deploy-status-badge" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-pending.svg"; ?>');
                     }
                     if (data.state === 'QUEUED') {
                     $( "#build_img" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-pending.svg"; ?>');
-                    $( "#admin-bar-vercel-deploy-status-badge" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-failed.svg"; ?>');
+                    $( "#admin-bar-vercel-deploy-status-badge" ).attr("src", '<?php echo plugin_dir_url( __FILE__ ) . "assets/vercel-pending.svg"; ?>');
                     }
                     $( "#deploy_finish_time" ).html( "Build Completed: " + created );
                     $( "#deploy_finish_status" ).html( "Build Status: " + data.state );
@@ -584,7 +583,7 @@ class deployWebhook {
             ),
             array(
             'uid' => 'vercel_site_id',
-            'label' => __('Vercel Site ID', 'webhook-vercel-deploy'),
+            'label' => __('Vercel Project ID', 'webhook-vercel-deploy'),
             'section' => 'developer_section',
             'type' => 'text',
                 'placeholder' => 'e.g. 5b8e927e-82e1-4786-4770-a9a8321yes43',
