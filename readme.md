@@ -4,9 +4,9 @@ Based on the WordPress Plugin [WP Netlify Webhook Deploy](https://github.com/luk
 
 ## Description
 
-Easily deploy static sites using Wordpress and Netlify
+Easily deploy static sites using Wordpress and Vercel
 
-Build Quickly and easily send webhooks to build your Netlify
+Build Quickly and easily send webhooks to build your Vercel
 
 Schedule Schedule daily, weekly or monthly builds
 
